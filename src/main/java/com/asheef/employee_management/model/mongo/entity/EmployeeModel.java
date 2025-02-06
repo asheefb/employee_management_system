@@ -1,5 +1,6 @@
 package com.asheef.employee_management.model.mongo.entity;
 
+import com.asheef.employee_management.enums.Gender;
 import com.asheef.employee_management.model.mysql.entity.Job;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,8 @@ public class EmployeeModel {
     @Field(targetType = FieldType.OBJECT_ID)
     private String id;
 
+    private Integer mysqlId;
+
     @Field(name = "first_name")
     private String firstName;
 
@@ -35,9 +38,9 @@ public class EmployeeModel {
     @Field(name = "date_of_birth")
     private Date dateOfBirth;
 
-    private String gender;
+    private Gender gender;
 
-    private Job job;
+    private JobModel job;
 
     private AddressInformation addressInformation;
 

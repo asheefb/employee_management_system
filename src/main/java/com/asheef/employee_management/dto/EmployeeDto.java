@@ -27,8 +27,6 @@ public class EmployeeDto {
 
     private String gender;
 
-    private String jobId;
-
     private String addressLine1;
 
     private String addressLine2;
@@ -39,11 +37,7 @@ public class EmployeeDto {
 
     private String country;
 
-    private String pinCode;
-
     private Date createdAt;
 
     private Date updatedAt;
-
-    private String salary;
 }

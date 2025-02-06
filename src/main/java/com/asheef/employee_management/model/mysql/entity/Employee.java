@@ -1,6 +1,6 @@
 package com.asheef.employee_management.model.mysql.entity;
 
-import com.asheef.employee_management.model.mongo.entity.Salary;
+import com.asheef.employee_management.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,7 +32,7 @@ public class Employee {
 
     private Date dateOfBirth;
 
-    private String gender;
+    private Gender gender;
 
     @Column(name = "job_id")
     private Integer jobId;

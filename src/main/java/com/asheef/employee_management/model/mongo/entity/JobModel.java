@@ -20,7 +20,7 @@ import java.util.Date;
 public class JobModel {
 
     @Field(targetType = FieldType.OBJECT_ID)
-    private Integer id;
+    private String id;
 
     @Field(value = "department_id")
     private String departmentId;
